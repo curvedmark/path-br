@@ -1,0 +1,33 @@
+{
+  "name": "path-br",
+  "version": "1.0.0",
+  "description": "Browerifiable path module",
+  "main": "lib/path.js",
+  "directories": {
+  	"lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha-phantomjs test/test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/curvedmark/path-br.git"
+  },
+  "keywords": [
+    "path",
+    "util",
+    "utility"
+  ],
+  "author": "Glen Huang <curvedmark@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curvedmark/path-br/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.x",
+    "chai": "1.x",
+    "mocha-phantomjs": "3.x"
+  },
+  "browser": "lib/path.browser.js"
+}

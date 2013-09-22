@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+	</head>
+	<body>
+		<div id="mocha"></div>
+		<script src="../node_modules/mocha/mocha.js"></script>
+		<script src="../node_modules/chai/chai.js"></script>
+		<script>
+			var exports = {};
+		</script>
+		<script src="../lib/path.browser.js"></script>
+		<script>
+			mocha.ui('qunit');
+			mocha.reporter('html');
+
+			var assert = chai.assert;
+			var path = exports;
+		</script>
+		<script src="test.js"></script>
+		<script>
+			if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+			else { mocha.run(); }
+		</script>
+	</body>
+</html>
